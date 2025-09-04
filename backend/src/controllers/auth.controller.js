@@ -134,6 +134,8 @@ async function loginFoodPartner(req, res) {
 
     const { email, password } = req.body;
 
+
+
     const foodPartner = await foodPartnerModel.findOne({
         email
     })
